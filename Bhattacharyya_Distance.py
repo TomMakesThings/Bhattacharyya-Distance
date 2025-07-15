@@ -1,6 +1,16 @@
+import numpy as np
+
 def bhattacharyyaDistance(x, y, n_bins = 50):
     """
     Bhattacharyya distance between two discrete probability distributions
+
+    params:
+        x: 1D signal of first distribution
+        y: 1D signal of second distribution
+        n_bins: Number of bins for the histogram
+
+    returns:
+        d: The Bhattacharyya distance
     """
 
     # Create histograms from signal
